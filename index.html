@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Spherical Harmonics Explorer</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<script src="plotly.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Spherical Harmonics Explorer</h1>
+
+<div class="controls">
+
+<label>Orbital Angular Momentum l</label>
+
+<input
+id="l"
+type="range"
+min="0"
+max="6"
+value="2">
+
+<span id="lValue">2</span>
+
+<br><br>
+
+<label>Magnetic Quantum Number m</label>
+
+<input
+id="m"
+type="range"
+min="-2"
+max="2"
+value="0">
+
+<span id="mValue">0</span>
+
+</div>
+
+<div id="info"></div>
+
+<div id="plot"></div>
+
+</div>
+
+<script src="explorer.js"></script>
+
+</body>
+
+</html>
